@@ -1,0 +1,565 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		59099E631E235A660030B31C /* SMSQLiteMigrationIndex.m in Sources */ = {isa = PBXBuildFile; fileRef = 59099E621E235A660030B31C /* SMSQLiteMigrationIndex.m */; };
+		59099E7B1E237E6D0030B31C /* TestDB_AddIndex.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 59099E7A1E237E6D0030B31C /* TestDB_AddIndex.sqlite */; };
+		59099E7D1E237EC40030B31C /* TestDB_DeleteIndex.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 59099E7C1E237EC40030B31C /* TestDB_DeleteIndex.sqlite */; };
+		5991BEBE1DEECA49002A07EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5991BEBD1DEECA49002A07EC /* main.m */; };
+		5991BEC11DEECA49002A07EC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5991BEC01DEECA49002A07EC /* AppDelegate.m */; };
+		5991BEC41DEECA49002A07EC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5991BEC31DEECA49002A07EC /* ViewController.m */; };
+		5991BEC71DEECA49002A07EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5991BEC51DEECA49002A07EC /* Main.storyboard */; };
+		5991BEC91DEECA49002A07EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5991BEC81DEECA49002A07EC /* Assets.xcassets */; };
+		5991BECC1DEECA49002A07EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5991BECA1DEECA49002A07EC /* LaunchScreen.storyboard */; };
+		5991BED71DEECA49002A07EC /* SMSQLiteMigrationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5991BED61DEECA49002A07EC /* SMSQLiteMigrationTests.m */; };
+		5991BF2B1DEECB1A002A07EC /* SMSQLiteMigrationColumn.m in Sources */ = {isa = PBXBuildFile; fileRef = 5991BF101DEECB1A002A07EC /* SMSQLiteMigrationColumn.m */; };
+		5991BF2C1DEECB1A002A07EC /* SMSQLiteMigrationContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 5991BF121DEECB1A002A07EC /* SMSQLiteMigrationContent.m */; };
+		5991BF2D1DEECB1A002A07EC /* SMSQLiteMigrationTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 5991BF141DEECB1A002A07EC /* SMSQLiteMigrationTable.m */; };
+		5991BF2E1DEECB1A002A07EC /* SMSQLiteMigrationTableTuple.m in Sources */ = {isa = PBXBuildFile; fileRef = 5991BF161DEECB1A002A07EC /* SMSQLiteMigrationTableTuple.m */; };
+		5991BF2F1DEECB1A002A07EC /* SMSQLiteMigration.m in Sources */ = {isa = PBXBuildFile; fileRef = 5991BF181DEECB1A002A07EC /* SMSQLiteMigration.m */; };
+		5991BF301DEECB1A002A07EC /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5991BF1B1DEECB1A002A07EC /* FMDatabase.m */; };
+		5991BF311DEECB1A002A07EC /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5991BF1D1DEECB1A002A07EC /* FMDatabaseAdditions.m */; };
+		5991BF321DEECB1A002A07EC /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 5991BF1F1DEECB1A002A07EC /* FMDatabasePool.m */; };
+		5991BF331DEECB1A002A07EC /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 5991BF211DEECB1A002A07EC /* FMDatabaseQueue.m */; };
+		5991BF341DEECB1A002A07EC /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 5991BF241DEECB1A002A07EC /* FMResultSet.m */; };
+		5991BF361DEECB1A002A07EC /* TestDB_AddColumn.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 5991BF261DEECB1A002A07EC /* TestDB_AddColumn.sqlite */; };
+		5991BF371DEECB1A002A07EC /* TestDB_AddTable.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 5991BF271DEECB1A002A07EC /* TestDB_AddTable.sqlite */; };
+		5991BF381DEECB1A002A07EC /* TestDB_DeleteTable.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 5991BF281DEECB1A002A07EC /* TestDB_DeleteTable.sqlite */; };
+		5991BF391DEECB1A002A07EC /* TestDB_RenameTabel.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 5991BF291DEECB1A002A07EC /* TestDB_RenameTabel.sqlite */; };
+		5991BF3A1DEECB1A002A07EC /* TestDB.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 5991BF2A1DEECB1A002A07EC /* TestDB.sqlite */; };
+		5991BF9D1DEED6E2002A07EC /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5991BF9C1DEED6E2002A07EC /* libsqlite3.0.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5991BED31DEECA49002A07EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5991BEB11DEECA49002A07EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5991BEB81DEECA49002A07EC;
+			remoteInfo = SMSQLiteMigration;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		59099E611E235A660030B31C /* SMSQLiteMigrationIndex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMSQLiteMigrationIndex.h; sourceTree = "<group>"; };
+		59099E621E235A660030B31C /* SMSQLiteMigrationIndex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMSQLiteMigrationIndex.m; sourceTree = "<group>"; };
+		59099E7A1E237E6D0030B31C /* TestDB_AddIndex.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestDB_AddIndex.sqlite; sourceTree = "<group>"; };
+		59099E7C1E237EC40030B31C /* TestDB_DeleteIndex.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestDB_DeleteIndex.sqlite; sourceTree = "<group>"; };
+		5991BEB91DEECA49002A07EC /* SMSQLiteMigration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SMSQLiteMigration.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5991BEBD1DEECA49002A07EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5991BEBF1DEECA49002A07EC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5991BEC01DEECA49002A07EC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5991BEC21DEECA49002A07EC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5991BEC31DEECA49002A07EC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5991BEC61DEECA49002A07EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5991BEC81DEECA49002A07EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5991BECB1DEECA49002A07EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5991BECD1DEECA49002A07EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5991BED21DEECA49002A07EC /* SMSQLiteMigrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SMSQLiteMigrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5991BED61DEECA49002A07EC /* SMSQLiteMigrationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMSQLiteMigrationTests.m; sourceTree = "<group>"; };
+		5991BED81DEECA49002A07EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5991BF0F1DEECB1A002A07EC /* SMSQLiteMigrationColumn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMSQLiteMigrationColumn.h; sourceTree = "<group>"; };
+		5991BF101DEECB1A002A07EC /* SMSQLiteMigrationColumn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMSQLiteMigrationColumn.m; sourceTree = "<group>"; };
+		5991BF111DEECB1A002A07EC /* SMSQLiteMigrationContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMSQLiteMigrationContent.h; sourceTree = "<group>"; };
+		5991BF121DEECB1A002A07EC /* SMSQLiteMigrationContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMSQLiteMigrationContent.m; sourceTree = "<group>"; };
+		5991BF131DEECB1A002A07EC /* SMSQLiteMigrationTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMSQLiteMigrationTable.h; sourceTree = "<group>"; };
+		5991BF141DEECB1A002A07EC /* SMSQLiteMigrationTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMSQLiteMigrationTable.m; sourceTree = "<group>"; };
+		5991BF151DEECB1A002A07EC /* SMSQLiteMigrationTableTuple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMSQLiteMigrationTableTuple.h; sourceTree = "<group>"; };
+		5991BF161DEECB1A002A07EC /* SMSQLiteMigrationTableTuple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMSQLiteMigrationTableTuple.m; sourceTree = "<group>"; };
+		5991BF171DEECB1A002A07EC /* SMSQLiteMigration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMSQLiteMigration.h; sourceTree = "<group>"; };
+		5991BF181DEECB1A002A07EC /* SMSQLiteMigration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMSQLiteMigration.m; sourceTree = "<group>"; };
+		5991BF1A1DEECB1A002A07EC /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		5991BF1B1DEECB1A002A07EC /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		5991BF1C1DEECB1A002A07EC /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		5991BF1D1DEECB1A002A07EC /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		5991BF1E1DEECB1A002A07EC /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		5991BF1F1DEECB1A002A07EC /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		5991BF201DEECB1A002A07EC /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		5991BF211DEECB1A002A07EC /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		5991BF221DEECB1A002A07EC /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		5991BF231DEECB1A002A07EC /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		5991BF241DEECB1A002A07EC /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		5991BF261DEECB1A002A07EC /* TestDB_AddColumn.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestDB_AddColumn.sqlite; sourceTree = "<group>"; };
+		5991BF271DEECB1A002A07EC /* TestDB_AddTable.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestDB_AddTable.sqlite; sourceTree = "<group>"; };
+		5991BF281DEECB1A002A07EC /* TestDB_DeleteTable.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestDB_DeleteTable.sqlite; sourceTree = "<group>"; };
+		5991BF291DEECB1A002A07EC /* TestDB_RenameTabel.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestDB_RenameTabel.sqlite; sourceTree = "<group>"; };
+		5991BF2A1DEECB1A002A07EC /* TestDB.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestDB.sqlite; sourceTree = "<group>"; };
+		5991BF9C1DEED6E2002A07EC /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5991BEB61DEECA49002A07EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5991BF9D1DEED6E2002A07EC /* libsqlite3.0.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5991BECF1DEECA49002A07EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5991BEB01DEECA49002A07EC = {
+			isa = PBXGroup;
+			children = (
+				5991BEBB1DEECA49002A07EC /* SMSQLiteMigration */,
+				5991BED51DEECA49002A07EC /* SMSQLiteMigrationTests */,
+				5991BEBA1DEECA49002A07EC /* Products */,
+				5991BF9B1DEED6E2002A07EC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5991BEBA1DEECA49002A07EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5991BEB91DEECA49002A07EC /* SMSQLiteMigration.app */,
+				5991BED21DEECA49002A07EC /* SMSQLiteMigrationTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5991BEBB1DEECA49002A07EC /* SMSQLiteMigration */ = {
+			isa = PBXGroup;
+			children = (
+				5991BF191DEECB1A002A07EC /* FMDatabase */,
+				5991BF0D1DEECB1A002A07EC /* DBMigration */,
+				5991BEBF1DEECA49002A07EC /* AppDelegate.h */,
+				5991BEC01DEECA49002A07EC /* AppDelegate.m */,
+				5991BEC21DEECA49002A07EC /* ViewController.h */,
+				5991BEC31DEECA49002A07EC /* ViewController.m */,
+				5991BF261DEECB1A002A07EC /* TestDB_AddColumn.sqlite */,
+				5991BF271DEECB1A002A07EC /* TestDB_AddTable.sqlite */,
+				5991BF281DEECB1A002A07EC /* TestDB_DeleteTable.sqlite */,
+				5991BF291DEECB1A002A07EC /* TestDB_RenameTabel.sqlite */,
+				59099E7A1E237E6D0030B31C /* TestDB_AddIndex.sqlite */,
+				59099E7C1E237EC40030B31C /* TestDB_DeleteIndex.sqlite */,
+				5991BF2A1DEECB1A002A07EC /* TestDB.sqlite */,
+				5991BEC51DEECA49002A07EC /* Main.storyboard */,
+				5991BEC81DEECA49002A07EC /* Assets.xcassets */,
+				5991BECA1DEECA49002A07EC /* LaunchScreen.storyboard */,
+				5991BECD1DEECA49002A07EC /* Info.plist */,
+				5991BEBC1DEECA49002A07EC /* Supporting Files */,
+			);
+			path = SMSQLiteMigration;
+			sourceTree = "<group>";
+		};
+		5991BEBC1DEECA49002A07EC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5991BEBD1DEECA49002A07EC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5991BED51DEECA49002A07EC /* SMSQLiteMigrationTests */ = {
+			isa = PBXGroup;
+			children = (
+				5991BED61DEECA49002A07EC /* SMSQLiteMigrationTests.m */,
+				5991BED81DEECA49002A07EC /* Info.plist */,
+			);
+			path = SMSQLiteMigrationTests;
+			sourceTree = "<group>";
+		};
+		5991BF0D1DEECB1A002A07EC /* DBMigration */ = {
+			isa = PBXGroup;
+			children = (
+				5991BF0E1DEECB1A002A07EC /* Private */,
+				5991BF171DEECB1A002A07EC /* SMSQLiteMigration.h */,
+				5991BF181DEECB1A002A07EC /* SMSQLiteMigration.m */,
+			);
+			path = DBMigration;
+			sourceTree = "<group>";
+		};
+		5991BF0E1DEECB1A002A07EC /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				5991BF0F1DEECB1A002A07EC /* SMSQLiteMigrationColumn.h */,
+				5991BF101DEECB1A002A07EC /* SMSQLiteMigrationColumn.m */,
+				5991BF111DEECB1A002A07EC /* SMSQLiteMigrationContent.h */,
+				5991BF121DEECB1A002A07EC /* SMSQLiteMigrationContent.m */,
+				5991BF131DEECB1A002A07EC /* SMSQLiteMigrationTable.h */,
+				5991BF141DEECB1A002A07EC /* SMSQLiteMigrationTable.m */,
+				59099E611E235A660030B31C /* SMSQLiteMigrationIndex.h */,
+				59099E621E235A660030B31C /* SMSQLiteMigrationIndex.m */,
+				5991BF151DEECB1A002A07EC /* SMSQLiteMigrationTableTuple.h */,
+				5991BF161DEECB1A002A07EC /* SMSQLiteMigrationTableTuple.m */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+		5991BF191DEECB1A002A07EC /* FMDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				5991BF1A1DEECB1A002A07EC /* FMDatabase.h */,
+				5991BF1B1DEECB1A002A07EC /* FMDatabase.m */,
+				5991BF1C1DEECB1A002A07EC /* FMDatabaseAdditions.h */,
+				5991BF1D1DEECB1A002A07EC /* FMDatabaseAdditions.m */,
+				5991BF1E1DEECB1A002A07EC /* FMDatabasePool.h */,
+				5991BF1F1DEECB1A002A07EC /* FMDatabasePool.m */,
+				5991BF201DEECB1A002A07EC /* FMDatabaseQueue.h */,
+				5991BF211DEECB1A002A07EC /* FMDatabaseQueue.m */,
+				5991BF221DEECB1A002A07EC /* FMDB.h */,
+				5991BF231DEECB1A002A07EC /* FMResultSet.h */,
+				5991BF241DEECB1A002A07EC /* FMResultSet.m */,
+			);
+			path = FMDatabase;
+			sourceTree = "<group>";
+		};
+		5991BF9B1DEED6E2002A07EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5991BF9C1DEED6E2002A07EC /* libsqlite3.0.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5991BEB81DEECA49002A07EC /* SMSQLiteMigration */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5991BEDB1DEECA49002A07EC /* Build configuration list for PBXNativeTarget "SMSQLiteMigration" */;
+			buildPhases = (
+				5991BEB51DEECA49002A07EC /* Sources */,
+				5991BEB61DEECA49002A07EC /* Frameworks */,
+				5991BEB71DEECA49002A07EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SMSQLiteMigration;
+			productName = SMSQLiteMigration;
+			productReference = 5991BEB91DEECA49002A07EC /* SMSQLiteMigration.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5991BED11DEECA49002A07EC /* SMSQLiteMigrationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5991BEDE1DEECA49002A07EC /* Build configuration list for PBXNativeTarget "SMSQLiteMigrationTests" */;
+			buildPhases = (
+				5991BECE1DEECA49002A07EC /* Sources */,
+				5991BECF1DEECA49002A07EC /* Frameworks */,
+				5991BED01DEECA49002A07EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5991BED41DEECA49002A07EC /* PBXTargetDependency */,
+			);
+			name = SMSQLiteMigrationTests;
+			productName = SMSQLiteMigrationTests;
+			productReference = 5991BED21DEECA49002A07EC /* SMSQLiteMigrationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5991BEB11DEECA49002A07EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = 00;
+				TargetAttributes = {
+					5991BEB81DEECA49002A07EC = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Manual;
+					};
+					5991BED11DEECA49002A07EC = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5991BEB81DEECA49002A07EC;
+					};
+				};
+			};
+			buildConfigurationList = 5991BEB41DEECA49002A07EC /* Build configuration list for PBXProject "SMSQLiteMigration" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5991BEB01DEECA49002A07EC;
+			productRefGroup = 5991BEBA1DEECA49002A07EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5991BEB81DEECA49002A07EC /* SMSQLiteMigration */,
+				5991BED11DEECA49002A07EC /* SMSQLiteMigrationTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5991BEB71DEECA49002A07EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59099E7B1E237E6D0030B31C /* TestDB_AddIndex.sqlite in Resources */,
+				5991BECC1DEECA49002A07EC /* LaunchScreen.storyboard in Resources */,
+				5991BF381DEECB1A002A07EC /* TestDB_DeleteTable.sqlite in Resources */,
+				5991BF371DEECB1A002A07EC /* TestDB_AddTable.sqlite in Resources */,
+				5991BF3A1DEECB1A002A07EC /* TestDB.sqlite in Resources */,
+				5991BEC91DEECA49002A07EC /* Assets.xcassets in Resources */,
+				5991BEC71DEECA49002A07EC /* Main.storyboard in Resources */,
+				5991BF391DEECB1A002A07EC /* TestDB_RenameTabel.sqlite in Resources */,
+				5991BF361DEECB1A002A07EC /* TestDB_AddColumn.sqlite in Resources */,
+				59099E7D1E237EC40030B31C /* TestDB_DeleteIndex.sqlite in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5991BED01DEECA49002A07EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5991BEB51DEECA49002A07EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5991BEC41DEECA49002A07EC /* ViewController.m in Sources */,
+				5991BF2E1DEECB1A002A07EC /* SMSQLiteMigrationTableTuple.m in Sources */,
+				5991BF2F1DEECB1A002A07EC /* SMSQLiteMigration.m in Sources */,
+				5991BF301DEECB1A002A07EC /* FMDatabase.m in Sources */,
+				5991BEC11DEECA49002A07EC /* AppDelegate.m in Sources */,
+				5991BF331DEECB1A002A07EC /* FMDatabaseQueue.m in Sources */,
+				5991BF341DEECB1A002A07EC /* FMResultSet.m in Sources */,
+				5991BF321DEECB1A002A07EC /* FMDatabasePool.m in Sources */,
+				5991BF2B1DEECB1A002A07EC /* SMSQLiteMigrationColumn.m in Sources */,
+				5991BF2D1DEECB1A002A07EC /* SMSQLiteMigrationTable.m in Sources */,
+				5991BEBE1DEECA49002A07EC /* main.m in Sources */,
+				59099E631E235A660030B31C /* SMSQLiteMigrationIndex.m in Sources */,
+				5991BF2C1DEECB1A002A07EC /* SMSQLiteMigrationContent.m in Sources */,
+				5991BF311DEECB1A002A07EC /* FMDatabaseAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5991BECE1DEECA49002A07EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5991BED71DEECA49002A07EC /* SMSQLiteMigrationTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5991BED41DEECA49002A07EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5991BEB81DEECA49002A07EC /* SMSQLiteMigration */;
+			targetProxy = 5991BED31DEECA49002A07EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5991BEC51DEECA49002A07EC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5991BEC61DEECA49002A07EC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5991BECA1DEECA49002A07EC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5991BECB1DEECA49002A07EC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5991BED91DEECA49002A07EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5991BEDA1DEECA49002A07EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5991BEDC1DEECA49002A07EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = SMSQLiteMigration/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-0.SMSQLiteMigration";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5991BEDD1DEECA49002A07EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = SMSQLiteMigration/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-0.SMSQLiteMigration";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5991BEDF1DEECA49002A07EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SMSQLiteMigrationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-0.SMSQLiteMigrationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SMSQLiteMigration.app/SMSQLiteMigration";
+			};
+			name = Debug;
+		};
+		5991BEE01DEECA49002A07EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SMSQLiteMigrationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-0.SMSQLiteMigrationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SMSQLiteMigration.app/SMSQLiteMigration";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5991BEB41DEECA49002A07EC /* Build configuration list for PBXProject "SMSQLiteMigration" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5991BED91DEECA49002A07EC /* Debug */,
+				5991BEDA1DEECA49002A07EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5991BEDB1DEECA49002A07EC /* Build configuration list for PBXNativeTarget "SMSQLiteMigration" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5991BEDC1DEECA49002A07EC /* Debug */,
+				5991BEDD1DEECA49002A07EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5991BEDE1DEECA49002A07EC /* Build configuration list for PBXNativeTarget "SMSQLiteMigrationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5991BEDF1DEECA49002A07EC /* Debug */,
+				5991BEE01DEECA49002A07EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5991BEB11DEECA49002A07EC /* Project object */;
+}

@@ -265,7 +265,7 @@
 
 + (NSArray<SMSQLiteMigrationTable *> *)sm_getAllTables:(FMDatabase *)database {
     NSMutableArray *tables = [@[] mutableCopy];
-    FMResultSet *tableResults = [database executeQuery:@"select name, sql from sqlite_master where type = 'table'"];
+    FMResultSet *tableResults = [database executeQuery:@"select name, sql from sqlite_master where type = 'table' and name != 'sqlite_sequence'"];
     while ([tableResults next]) {
         SMSQLiteMigrationTable *table = [SMSQLiteMigrationTable new];
         table.name = [[tableResults stringForColumn:@"name"] lowercaseString];
